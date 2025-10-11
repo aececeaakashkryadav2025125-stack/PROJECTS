@@ -1,0 +1,29 @@
+#claculator{
+    border: 1px solid rgb(34, 33, 33);
+    border-radius: 5px;
+    width: 200px;
+}
+
+#display{
+    margin:20px 20px;
+    
+    width: 85%;
+}
+.button-conatiner{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+ .button{
+    width: 45px;
+    height: 45px;
+    margin: 4px;
+
+ }
+ main{
+    height: 50%;
+    width: 25%;
+    border: 2px black solid;
+
+ }
