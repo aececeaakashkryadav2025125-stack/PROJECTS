@@ -1,0 +1,81 @@
+/* General Page Styling */
+body {
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* Container Layout */
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+#box {
+  display: flex;
+  gap: 30px;
+}
+
+/* Common Shape Styling */
+.shape {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+/* Individual Shapes */
+#square {
+  background-color: #3498db;
+  border-radius: 8px;
+}
+
+#circle {
+  background-color: #2ecc71;
+  border-radius: 50%;
+}
+
+#diamond {
+  background-color: #e74c3c;
+  transform: rotate(45deg);
+}
+
+/* Keep numbers upright in the diamond */
+#diamond h1 {
+  transform: rotate(-45deg);
+}
+
+/* ✨ Hover Effects ✨ */
+
+/* Square Hover */
+#square:hover {
+  background-color: #2980b9;
+  transform: scale(1.2) rotate(10deg);
+  box-shadow: 0 0 20px rgba(52, 152, 219, 0.6);
+}
+
+/* Circle Hover */
+#circle:hover {
+  background-color: #27ae60;
+  transform: scale(1.2);
+  box-shadow: 0 0 25px rgba(46, 204, 113, 0.6);
+}
+
+/* Diamond Hover */
+#diamond:hover {
+  background-color: #c0392b;
+  transform: rotate(45deg) scale(1.2);
+  box-shadow: 0 0 25px rgba(231, 76, 60, 0.6);
+}
