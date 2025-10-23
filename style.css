@@ -1,29 +1,117 @@
-#claculator{
-    border: 1px solid rgb(34, 33, 33);
-    border-radius: 5px;
-    width: 200px;
+body{
+    background-color: antiquewhite;
 }
 
-#display{
-    margin:20px 20px;
-    
-    width: 85%;
+*{
+    margin: 0;
+    padding: 0;
 }
-.button-conatiner{
+nav{
+    font-family: sans-serif;
+}
+
+nav ul{
+display: flex;
+align-items: center;
+list-style: none;
+height: 65px;
+background-color: black;
+color: white;
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+
+.brand img{
+ width: 44px;
+ padding: 0 8px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container{
+    min-height:  72vh; 
+    background-color: black;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    width: 70%;
+    margin: 23px auto;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url(https://i.pinimg.com/736x/ab/c2/e1/abc2e1571339b7d1ddf8cb82fb726422.jpg);
+    
+}
+.container img{
+    height: 100vh;
+    width: 100vw;
+}
+
+.bottom{
+    position: sticky;
+    height: 130px;
+    background-color: black;
+    color: white;
+    bottom: 0;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
 }
 
- .button{
-    width: 45px;
-    height: 45px;
-    margin: 4px;
 
- }
- main{
-    height: 50%;
-    width: 25%;
-    border: 2px black solid;
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+}
+.icons{
+        margin: 14px;
 
- }
+}
+.icons i{
+    cursor: pointer;
+}
+.songItemContainer{
+    margin-top: 34px;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.songItem img{
+
+    width: 23px;
+    height: 10px;
+    margin: 0 23px;
+}
+.timestamp{
+    margin: 0 23px;
+
+}
+.timestamp i{
+  cursor: pointer ;  
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    
+}
+.songInfo img{
+    color: white ;
+    opacity: 0;
+    transition: opacity is ease-in;
+}
+

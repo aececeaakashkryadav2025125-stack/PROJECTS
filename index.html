@@ -3,57 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
 </head>
 <body>
-    <main>
-        <div id="calculator">
-        <input type="text" id="display" readonly>
-        <div class="button-container">
-            <button class="button" onclick="currentDisplay='';
-            document.querySelector('#display').value=currentDisplay">C</button>
-            <button class="button" onclick="currentDisplay=currentDisplay+'1';
-            document.querySelector('#display').value=currentDisplay">1</button>
-            <button class="button" onclick="currentDisplay=currentDisplay+'2';
-            document.querySelector('#display').value=currentDisplay">2</button>
-            <button class="button" onclick="currentDisplay=currentDisplay+'+';
-            document.querySelector('#display').value=currentDisplay">+</button>
-            <button class="button" onclick="currentDisplay=currentDisplay+'3';
-            document.querySelector('#display').value=currentDisplay">3</button>
-            <button class="button" onclick="currentDisplay=currentDisplay+'4';
-            document.querySelector('#display').value=currentDisplay">4</button> 
-            <button class="button" onclick="currentDisplay=currentDisplay+'-';
-            document.querySelector('#display').value=currentDisplay">-</button>
-            <button class="button" onclick="currentDisplay=currentDisplay+'5';
-            document.querySelector('#display').value=currentDisplay">5</button>
-            <button class="button" onclick="currentDisplay=currentDisplay+'6';
-            document.querySelector('#display').value=currentDisplay">6</button>
-            <button class="button" onclick="currentDisplay=currentDisplay+'*';
-            document.querySelector('#display').value=currentDisplay">*</button>
-            <button class="button" onclick="currentDisplay=currentDisplay+'7';
-            document.querySelector('#display').value=currentDisplay">7</button>
-            <button class="button" onclick="currentDisplay=currentDisplay+'8';
-            document.querySelector('#display').value=currentDisplay">8</button>
-            <button class="button" onclick="currentDisplay=currentDisplay+'/';
-            document.querySelector('#display').value=currentDisplay">/</button>
-            <button class="button" onclick="let result=eval(currentDisplay);
-            currentDisplay=result;
-            document.querySelector('#display').value=currentDisplay">=</button>
-            <button class="button" onclick="currentDisplay=currentDisplay+'9';
-            document.querySelector('#display').value=currentDisplay">9</button>
-            <button class="button" onclick="currentDisplay=currentDisplay+'0';
-            document.querySelector('#display').value=currentDisplay">0</button>
-            <button class="button" onclick="currentDisplay=currentDisplay+'.';
-            document.querySelector('#display').value=currentDisplay">.</button>
+    <nav>
+        <ul>
+            <li class="brand"><img src="https://cdn-icons-png.flaticon.com/128/3669/3669986.png" alt="Spotify">Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
 
+    <div class="container">
+        <div class="songlist">
+            <h1>Songs</h1>
 
+           <div class="songItemContainer">
+             <div class="songItem">
+                <img src="https://substreammagazine.com/wp-content/uploads/2017/10/maxresdefault-5.jpg" alt="1" >
+                <span></span>
+                <span class="songlistplay"><span class="timestamp">4:14 <i id="0" class=" songItemPlay fa-solid fa-play"></i></span>
+            </div>
+             <div class="songItem">
+                <img src="https://i.pinimg.com/1200x/57/dc/e6/57dce67a057f09329731e99b9f4bbc25.jpg" alt="1" >
+                <span class="songName">Beautiful</span>
+                <span class="songlistplay"><span class="timestamp">4:14 <i id="1" class=" songItemPlay fa-solid fa-play"></i></span>
+            </div>
+             <div class="songItem">
+                <img src="https://i.pinimg.com/1200x/57/dc/e6/57dce67a057f09329731e99b9f4bbc25.jpg" alt="1" >
+                <span class="songName">Beautiful</span>
+                <span class="songlistplay"><span class="timestamp">4:14 <i id="2" class=" songItemPlay fa-solid fa-play"></i></span>
+            </div>
+             <div class="songItem">
+                <img src="https://i.pinimg.com/1200x/57/dc/e6/57dce67a057f09329731e99b9f4bbc25.jpg" alt="1" >
+                <span class="songName">Beautiful</span>
+                <span class="songlistplay"><span class="timestamp">4:14 <i id="3" class="songItemPlay fa-solid fa-play"></i></span>
+            </div>
+           </div>
+
+        
+        
         </div>
+        <div class="songBanner"></div>
     </div>
-    </main>
-    <script>
-        let currentDisplay='';
-        document.querySelector('#display').value=currentDisplay;
-    </script>
+
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="icons">
+        <i class="fa-solid fa-backward-step" id="previous"></i>
+        <i class="fa-solid fa-play" id="masterPlay"></i>
+        <i class="fa-solid fa-forward-step" id="next"></i>
+    </div>
+    <div class="songInfo">
+       <img src="https://fontawesome.com/icons/music?f=classic&s=solid" alt=""><span id ="masterSongName"></span> Beautiful-Eminem
+    </div>
+    </div>
+   <script src="https://kit.fontawesome.com/7cfbbb0c2a.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
